@@ -3,4 +3,5 @@ pandas
 streamlit
 pickle
 scikit-learn
+streamlit_option_menu
 pip==22.3.1
