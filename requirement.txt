@@ -3,4 +3,4 @@ pandas
 streamlit
 pickle
 scikit-learn
-pip
+pip == 22.3.1
