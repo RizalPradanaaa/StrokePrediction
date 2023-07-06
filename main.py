@@ -3,7 +3,7 @@ import pickle
 
 
 # Membaca Model
-model = pickle.load(open('Stroke_Model.sav', 'rb'))
+model_stroke = pickle.load(open('Stroke_Model.sav', 'rb'))
 
 
 st.title("Prediksi Penyakit Stroke Dengan Algoritma Random Forest")
@@ -64,7 +64,7 @@ if st.button('Prediksi') :
     diaknosis = ''
 
     # Menjalankan Model
-    prediksi = model.predict([[jenis_kelamin, umur, hipertensi, sakit_jantung, menikah, tipe_pekerjaan, area, gula_darah, berat, merokok]])
+    prediksi = model_stroke.predict([[jenis_kelamin, umur, hipertensi, sakit_jantung, menikah, tipe_pekerjaan, area, gula_darah, berat, merokok]])
 
     if(prediksi[0] != 0) :
         diaknosis = 'Anda Tidak Terkena Stroke'
