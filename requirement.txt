@@ -1,3 +1,2 @@
 streamlit
-scikit-learn
 pip==22.3.1
